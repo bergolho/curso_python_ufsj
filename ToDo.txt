@@ -1,0 +1,38 @@
+Explicações:
+
+1) Criação do Python, qual foi a motivação para criar a linguagem ?
+
+2) O que é linguagem de alto nível ?
+
+3) O que é linguagem interpretada ?
+
+4) Programação modular ? Orientada a objetos ? Funcional ?
+
+5) Tipagem dinâmica ?
+
+6) Como funciona a interface com outras linguagens ?
+
+*******************************************************************************
+Dicas:
+
+1) Comandos muito longos, procure quebrar ele em partes menores para
+tentar entender melhor
+
+2) Você pode escrever um resumo do que uma função faz criando um bloco
+de comentário logo depois da definição:
+
+def sample_function ():
+	"""
+	Exemplo de uma funcao
+	"""
+	return
+
+Para ler a descrição use: help(sample_function)
+
+************************************************************************
+
+- Fazer a Parte 2
+- Quando terminar organizar os cursos da UFSJ e UFJF e mandar um pull
+request para o Bernardo.
+
+
