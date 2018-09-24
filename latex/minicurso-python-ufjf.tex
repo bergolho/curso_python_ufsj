@@ -2146,8 +2146,8 @@ ofile.close()
 	\begin{python}
 infile = open("dados.txt", "r")	
 line = infile.readline()
-while line != "":
-    print(line)
+data_count = int(line)
+for i in range(data_count):
     line = infile.readline()
 infile.close()
 	\end{python}
@@ -2169,12 +2169,12 @@ sline = line.rstrip()
 	\item Lendo de arquivos
 	\ei
 	\begin{python}
-		infile = open("dados.txt", "r")	
-		line = infile.readline()
-		while line != "":
-		print(line)
-		line = infile.readline()
-		infile.close()
+infile = open("dados.txt", "r")	
+line = infile.readline()
+data_count = int(line)
+for i in range(data_count):
+    line = infile.readline()
+infile.close()
 	\end{python}
 	\bi
 	\item Podemos usar o metodo \pythoninline{rstrip()} para remover
@@ -2224,11 +2224,14 @@ nome, idade, nota = temp[0], temp[1], temp[2]
   \begin{python}
 >>> arquivo = "pontos.txt"
 >>> pts = le_pontos(arquivo)
->>> print pts
-[<__main__.Ponto instance at 0x0538F3C8>,
- <__main__.Ponto instance at 0x0538F440>,
- <__main__.Ponto instance at 0x0538F260>,
- <__main__.Ponto instance at 0x0538F3F0>]
+>>> for pt in pts:
+>   	print pt
+(x1,y1) 
+(x2,y2)
+.
+.
+.
+(xn,yn)   
   \end{python}	
 \end{frame}
 

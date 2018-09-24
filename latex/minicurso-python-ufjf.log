@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.9.22)  23 SEP 2018 19:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.9.22)  23 SEP 2018 21:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2269,7 +2269,7 @@ Overfull \hbox (5.0pt too wide) has occurred while \output is active
 ]
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 2263.
+(hyperref)                setting the option has no effect on input line 2266.
 
 
 Overfull \hbox (5.0pt too wide) has occurred while \output is active
@@ -2570,7 +2570,7 @@ Overfull \hbox (5.72476pt too wide) in paragraph at lines 22--23
  []
 
 )
-Overfull \vbox (14.00111pt too high) detected at line 2622
+Overfull \vbox (14.00111pt too high) detected at line 2625
  []
 
 
@@ -2635,7 +2635,7 @@ File: img/hv.png Graphic file (type png)
 Package pdftex.def Info: img/hv.png used on input line 15.
 (pdftex.def)             Requested size: 117.3644pt x 88.45691pt.
 )
-Overfull \vbox (7.93167pt too high) detected at line 2739
+Overfull \vbox (7.93167pt too high) detected at line 2742
  []
 
 
@@ -2651,7 +2651,7 @@ File: img/hv.png Graphic file (type png)
 Package pdftex.def Info: img/hv.png used on input line 15.
 (pdftex.def)             Requested size: 117.3644pt x 88.45691pt.
 )
-Overfull \vbox (7.93167pt too high) detected at line 2739
+Overfull \vbox (7.93167pt too high) detected at line 2742
  []
 
 
@@ -2923,7 +2923,7 @@ File: img/plot2.png Graphic file (type png)
 Package pdftex.def Info: img/plot2.png used on input line 20.
 (pdftex.def)             Requested size: 132.04054pt x 99.51823pt.
 )
-Overfull \vbox (3.51935pt too high) detected at line 3150
+Overfull \vbox (3.51935pt too high) detected at line 3153
  []
 
 
@@ -2943,7 +2943,7 @@ File: img/plot3.png Graphic file (type png)
 Package pdftex.def Info: img/plot3.png used on input line 19.
 (pdftex.def)             Requested size: 143.52931pt x 111.22438pt.
 )
-Overfull \vbox (5.2255pt too high) detected at line 3173
+Overfull \vbox (5.2255pt too high) detected at line 3176
  []
 
 
@@ -2973,7 +2973,7 @@ File: img/plot4.png Graphic file (type png)
 Package pdftex.def Info: img/plot4.png used on input line 17.
 (pdftex.def)             Requested size: 126.47218pt x 98.28696pt.
 )
-Overfull \vbox (9.01443pt too high) detected at line 3252
+Overfull \vbox (9.01443pt too high) detected at line 3255
  []
 
 
@@ -3287,7 +3287,7 @@ Overfull \hbox (62.2948pt too wide) in paragraph at lines 41--42
  []
 
 )
-Overfull \vbox (5.72748pt too high) detected at line 3444
+Overfull \vbox (5.72748pt too high) detected at line 3447
  []
 
 
@@ -3326,7 +3326,7 @@ Overfull \hbox (5.0pt too wide) has occurred while \output is active
 ]
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 3487.
+(hyperref)                setting the option has no effect on input line 3490.
 
 
 Overfull \hbox (5.0pt too wide) has occurred while \output is active
@@ -3390,7 +3390,7 @@ Overfull \hbox (5.0pt too wide) has occurred while \output is active
 <img/logo_sage.png, id=757, 402.4125pt x 106.7625pt>
 File: img/logo_sage.png Graphic file (type png)
  <use img/logo_sage.png>
-Package pdftex.def Info: img/logo_sage.png used on input line 3535.
+Package pdftex.def Info: img/logo_sage.png used on input line 3538.
 (pdftex.def)             Requested size: 120.72467pt x 32.02899pt.
 
 Overfull \hbox (5.0pt too wide) has occurred while \output is active
@@ -3403,20 +3403,20 @@ Overfull \hbox (5.0pt too wide) has occurred while \output is active
 <img/mayavi-boy.png, id=764, 301.125pt x 343.2825pt>
 File: img/mayavi-boy.png Graphic file (type png)
  <use img/mayavi-boy.png>
-Package pdftex.def Info: img/mayavi-boy.png used on input line 3559.
+Package pdftex.def Info: img/mayavi-boy.png used on input line 3562.
 (pdftex.def)             Requested size: 75.28105pt x 85.8204pt.
 
 <img/mayavi-ipython.png, id=765, 301.125pt x 153.57375pt>
 File: img/mayavi-ipython.png Graphic file (type png)
 
 <use img/mayavi-ipython.png>
-Package pdftex.def Info: img/mayavi-ipython.png used on input line 3559.
+Package pdftex.def Info: img/mayavi-ipython.png used on input line 3562.
 (pdftex.def)             Requested size: 120.44786pt x 61.4284pt.
  <img/heart.jpg, id=766, 813.0375pt x 631.35875pt>
 File: img/heart.jpg Graphic file (type jpg)
 
 <use img/heart.jpg>
-Package pdftex.def Info: img/heart.jpg used on input line 3559.
+Package pdftex.def Info: img/heart.jpg used on input line 3562.
 (pdftex.def)             Requested size: 162.60461pt x 126.2695pt.
 
 Overfull \hbox (5.0pt too wide) has occurred while \output is active
@@ -3429,28 +3429,28 @@ Overfull \hbox (5.0pt too wide) has occurred while \output is active
 <img/vtk100.png, id=775, 316.18124pt x 78.2925pt>
 File: img/vtk100.png Graphic file (type png)
  <use img/vtk100.png>
-Package pdftex.def Info: img/vtk100.png used on input line 3597.
+Package pdftex.def Info: img/vtk100.png used on input line 3600.
 (pdftex.def)             Requested size: 142.28024pt x 35.2313pt.
 
 <img/vtk_ex.jpg, id=776, 317.185pt x 205.76875pt>
 File: img/vtk_ex.jpg Graphic file (type jpg)
  <use img/vtk_ex.jpg>
-Package pdftex.def Info: img/vtk_ex.jpg used on input line 3597.
+Package pdftex.def Info: img/vtk_ex.jpg used on input line 3600.
 (pdftex.def)             Requested size: 111.0164pt x 72.02013pt.
 
 <img/opengl.jpg, id=777, 98.3675pt x 128.48pt>
 File: img/opengl.jpg Graphic file (type jpg)
  <use img/opengl.jpg>
-Package pdftex.def Info: img/opengl.jpg used on input line 3597.
+Package pdftex.def Info: img/opengl.jpg used on input line 3600.
 (pdftex.def)             Requested size: 44.26495pt x 57.81546pt.
 
 <img/pyogl.png, id=778, 388.45125pt x 355.3275pt>
 File: img/pyogl.png Graphic file (type png)
  <use img/pyogl.png>
-Package pdftex.def Info: img/pyogl.png used on input line 3597.
+Package pdftex.def Info: img/pyogl.png used on input line 3600.
 (pdftex.def)             Requested size: 77.68886pt x 71.06422pt.
 
-Overfull \vbox (2.59811pt too high) detected at line 3597
+Overfull \vbox (2.59811pt too high) detected at line 3600
  []
 
 
@@ -3465,13 +3465,13 @@ Overfull \hbox (5.0pt too wide) has occurred while \output is active
 File: img/pyamg.png Graphic file (type png)
 
 <use img/pyamg.png>
-Package pdftex.def Info: img/pyamg.png used on input line 3626.
+Package pdftex.def Info: img/pyamg.png used on input line 3629.
 (pdftex.def)             Requested size: 120.44786pt x 35.73286pt.
  <img/logo_pysparse.png, id=787, 80.3pt x 80.3pt>
 File: img/logo_pysparse.png Graphic file (type png)
 
 <use img/logo_pysparse.png>
-Package pdftex.def Info: img/logo_pysparse.png used on input line 3626.
+Package pdftex.def Info: img/logo_pysparse.png used on input line 3629.
 (pdftex.def)             Requested size: 52.19437pt x 52.19437pt.
 
 Overfull \hbox (5.0pt too wide) has occurred while \output is active
@@ -3484,13 +3484,13 @@ Overfull \hbox (5.0pt too wide) has occurred while \output is active
 <img/fenics.png, id=796, 307.1475pt x 169.63374pt>
 File: img/fenics.png Graphic file (type png)
  <use img/fenics.png>
-Package pdftex.def Info: img/fenics.png used on input line 3657.
+Package pdftex.def Info: img/fenics.png used on input line 3660.
 (pdftex.def)             Requested size: 92.14496pt x 50.8905pt.
 
 <img/logo_fipy.png, id=797, 76.285pt x 88.33pt>
 File: img/logo_fipy.png Graphic file (type png)
  <use img/logo_fipy.png>
-Package pdftex.def Info: img/logo_fipy.png used on input line 3657.
+Package pdftex.def Info: img/logo_fipy.png used on input line 3660.
 (pdftex.def)             Requested size: 49.58466pt x 57.4138pt.
 
 Overfull \hbox (5.0pt too wide) has occurred while \output is active
@@ -3504,14 +3504,14 @@ Overfull \hbox (5.0pt too wide) has occurred while \output is active
 File: img/shogun_logo.png Graphic file (type png)
 
 <use img/shogun_logo.png>
-Package pdftex.def Info: img/shogun_logo.png used on input line 3686.
+Package pdftex.def Info: img/shogun_logo.png used on input line 3689.
 (pdftex.def)             Requested size: 37.64052pt x 75.532pt.
 
 <img/logo_scikit-learn.png, id=806, 250.536pt x 138.116pt>
 File: img/logo_scikit-learn.png Graphic file (type png)
 
 <use img/logo_scikit-learn.png>
-Package pdftex.def Info: img/logo_scikit-learn.png used on input line 3686.
+Package pdftex.def Info: img/logo_scikit-learn.png used on input line 3689.
 (pdftex.def)             Requested size: 100.21262pt x 55.2454pt.
 
 Overfull \hbox (5.0pt too wide) has occurred while \output is active
@@ -3525,19 +3525,19 @@ Overfull \hbox (5.0pt too wide) has occurred while \output is active
 File: img/astropysics.png Graphic file (type png)
 
 <use img/astropysics.png>
-Package pdftex.def Info: img/astropysics.png used on input line 3714.
+Package pdftex.def Info: img/astropysics.png used on input line 3717.
 (pdftex.def)             Requested size: 143.57603pt x 39.26659pt.
  <img/pyfits-ex.jpg, id=815, 401.5pt x 232.87pt>
 File: img/pyfits-ex.jpg Graphic file (type jpg)
 
 <use img/pyfits-ex.jpg>
-Package pdftex.def Info: img/pyfits-ex.jpg used on input line 3714.
+Package pdftex.def Info: img/pyfits-ex.jpg used on input line 3717.
 (pdftex.def)             Requested size: 80.29857pt x 46.57317pt.
  <img/yt_icon.png, id=816, 180.675pt x 136.51pt>
 File: img/yt_icon.png Graphic file (type png)
 
 <use img/yt_icon.png>
-Package pdftex.def Info: img/yt_icon.png used on input line 3714.
+Package pdftex.def Info: img/yt_icon.png used on input line 3717.
 (pdftex.def)             Requested size: 72.2687pt x 54.60303pt.
 
 Overfull \hbox (5.0pt too wide) has occurred while \output is active
@@ -3550,7 +3550,7 @@ Overfull \hbox (5.0pt too wide) has occurred while \output is active
 <img/babel130.png, id=824, 130.4875pt x 124.465pt>
 File: img/babel130.png Graphic file (type png)
  <use img/babel130.png>
-Package pdftex.def Info: img/babel130.png used on input line 3730.
+Package pdftex.def Info: img/babel130.png used on input line 3733.
 (pdftex.def)             Requested size: 65.24358pt x 62.23235pt.
 
 Overfull \hbox (5.0pt too wide) has occurred while \output is active
@@ -3569,13 +3569,13 @@ Overfull \hbox (5.0pt too wide) has occurred while \output is active
 ] <img/book.png, id=837, 246.9225pt x 341.275pt>
 File: img/book.png Graphic file (type png)
  <use img/book.png>
-Package pdftex.def Info: img/book.png used on input line 3790.
+Package pdftex.def Info: img/book.png used on input line 3793.
 (pdftex.def)             Requested size: 37.03677pt x 51.18903pt.
 
 <img/pypd.jpg, id=838, 301.125pt x 451.6875pt>
 File: img/pypd.jpg Graphic file (type jpg)
  <use img/pypd.jpg>
-Package pdftex.def Info: img/pypd.jpg used on input line 3790.
+Package pdftex.def Info: img/pypd.jpg used on input line 3793.
 (pdftex.def)             Requested size: 75.28105pt x 112.92159pt.
 
 Overfull \hbox (5.0pt too wide) has occurred while \output is active
@@ -3588,7 +3588,7 @@ Overfull \hbox (5.0pt too wide) has occurred while \output is active
 <img/pgmc.png, id=845, 1132.23pt x 954.56625pt>
 File: img/pgmc.png Graphic file (type png)
  <use img/pgmc.png>
-Package pdftex.def Info: img/pgmc.png used on input line 3808.
+Package pdftex.def Info: img/pgmc.png used on input line 3811.
 (pdftex.def)             Requested size: 169.82716pt x 143.17876pt.
 
 Overfull \hbox (5.0pt too wide) has occurred while \output is active
@@ -3607,7 +3607,7 @@ Overfull \hbox (5.0pt too wide) has occurred while \output is active
 ]
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 3825.
+(hyperref)                setting the option has no effect on input line 3828.
 
 
 Overfull \hbox (5.0pt too wide) has occurred while \output is active
@@ -3632,11 +3632,11 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3829.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3829.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3832.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3832.
 (./minicurso-python-ufjf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3829.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3829.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3832.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3832.
 
 Package rerunfilecheck Info: File `minicurso-python-ufjf.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -3645,13 +3645,13 @@ Package rerunfilecheck Info: File `minicurso-python-ufjf.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3829.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3832.
  ) 
 Here is how much of TeX's memory you used:
- 22057 strings out of 494122
- 393703 string characters out of 6156779
+ 22058 strings out of 494122
+ 393690 string characters out of 6156779
  500683 words of memory out of 5000000
- 24364 multiletter control sequences out of 15000+600000
+ 24365 multiletter control sequences out of 15000+600000
  20799 words of font info for 59 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  56i,14n,55p,535b,1580s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3682,7 +3682,7 @@ are/texlive/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/cm-super/sftt1728.pfb>
-Output written on minicurso-python-ufjf.pdf (143 pages, 3058827 bytes).
+Output written on minicurso-python-ufjf.pdf (143 pages, 3058879 bytes).
 PDF statistics:
  1017 PDF objects out of 1200 (max. 8388607)
  760 compressed objects within 8 object streams
