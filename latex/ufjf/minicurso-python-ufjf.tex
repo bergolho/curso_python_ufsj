@@ -469,10 +469,11 @@
     >>> """ tripla"""
     ' tripla'
 
-    >>> """ tripla possui uma propriedade especial: elas
-    ignoram quebra de linha, portanto a string aparece como
-    ela eh escrita"""
-    ' tripla possui uma propriedade especial: elas \n ignoram '		
+    >>> """ tripla possui uma propriedade especial: 
+    elas ignoram quebra de linha, portanto a string 
+    aparece como ela eh escrita"""
+    ' tripla possui uma propriedade especial: 
+    elas ignoram \n'		
   \end{python}
 \end{frame}
 
@@ -769,7 +770,6 @@
   \end{scriptsize}	
 \item Outros métodos:
   \bi
-\item extend(L): append de uma lista L
 \item remove(x): remove primeira ocorrência de x
 \item index(x): retorna o índice da primeira ocorrência de x na lista
   \ei
@@ -858,9 +858,7 @@
 \item Alguns exemplos
   \bi
 \item \pythoninline{range}: para listas
-\item \pythoninline{all} e \pythoninline{any} para aplicar filtros booleanos em listas
-\item \pythoninline{dict}, \pythoninline{list}, \pythoninline{set} e \pythoninline{object}
-\item \pythoninline{sorted} e \pythoninline{reversed} para ordenar listas
+\item \pythoninline{dict}, \pythoninline{list}, \pythoninline{set} e \pythoninline{object} tipos de estrutura de dados
 \item \pythoninline{min}, \pythoninline{max} e \pythoninline{sum} para operações matemáticas em listas
 \item \pythoninline{help}, \pythoninline{dir}
   \ei
@@ -1220,7 +1218,7 @@ def nome2(arg1, arg2, ...):
 def nome1(arg1, arg2, argx=valor):
     comandos
     return exp
-  \end{python}	
+  \end{python}
 \end{frame}
 
 % ------------------------------------------------------------------------------
@@ -1247,6 +1245,11 @@ True
 >>> fib(8) 
 0 1 1 2 3 5
   \end{python}	
+	\bi
+	\item Passagem por referência depende do tipo de objeto
+	\item Mutável (Lists)
+	\item Imutável (Strings)	
+	\ei
 \end{frame}
 
 % ------------------------------------------------------------------------------
@@ -1568,18 +1571,9 @@ None
   \bi
 \item Vamos apresentar de forma rápida como construir
   classes em Python através de alguns exemplos.
-\item A classe mais simples do mundo
-  \ei
-  \begin{python}
-class Ponto:
-    pass
-
->>> p = Ponto()
->>> print p
-<__main__.Ponto instance at 0x7f891f392098>		
-  \end{python}
+\ei
   \bi
-\item Com construtor
+\item Definindo o construtor
   \ei
   \begin{python}
  class Ponto:
@@ -1588,7 +1582,7 @@ class Ponto:
         self.yCoord = y		
   \end{python}
   \bi
-\item Assim
+\item Criando um objeto do tipo Ponto
   \ei
   \begin{python}
 p = Ponto(2.0, 1.0)
