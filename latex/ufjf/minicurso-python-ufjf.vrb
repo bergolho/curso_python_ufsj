@@ -1,0 +1,29 @@
+\frametitle{Sympy}
+\begin{figure}
+		\centering
+		\includegraphics[scale=0.4]{img/sympylogo.png}
+	\end{figure}
+	\begin{itemize}
+		\item Computação Simbólica
+		\item Alternativa livre aos softwares Maple, Mathematica e Matlab.
+		\item Aritmética básica, expansões, funções, derivadas, integrais,
+		substituições, limite, matrizes, etc.
+	\end{itemize}
+	\begin{columns}
+		\column{.5\textwidth}
+		\begin{python}
+>>> from sympy import *
+>>> x = Symbol('x')
+>>> f = 2 * cos(x)
+>>> diff(f, x)
+-2*sin(x)
+\end{python}
+\column{.5\textwidth}
+\begin{python}
+>>> x = Symbol("x")
+>>> limit(sin(x)/x, x, 0)
+1
+>>> limit(1/x, x, oo)
+0
+		\end{python}
+	\end{columns}
