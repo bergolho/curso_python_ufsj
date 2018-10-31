@@ -16,11 +16,11 @@ def main ():
 	nova_lista2 = power_list2(lista)
 
 	print("Lista")
-	print lista
+	print(lista)
 	print("Nova Lista 1")
-	print nova_lista1
+	print(nova_lista1)
 	print("Nova Lista 2")
-	print nova_lista2	
+	print(nova_lista2)	
 	
 if __name__ == "__main__":
 	main()	

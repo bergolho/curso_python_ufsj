@@ -16,13 +16,13 @@ def solucao2 (lista):
 def main ():
 	# Criando uma lista
 	lista = ["Lucas","Barbara","Thais","Bernardo","Ruy"]
-	print lista
+	print(lista)
 
 	r1 = solucao1(lista)
-	print r1
+	print(r1) 
 
 	r2 = solucao2(lista)
-	print r2
+	print(r2) 
 
 	# Usando programacao funcional com 'map'
 	#lista_summed = map(sum, lista1, lista2)

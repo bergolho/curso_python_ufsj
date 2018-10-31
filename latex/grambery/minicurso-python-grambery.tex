@@ -516,10 +516,10 @@
 \item Strings são imutáveis
   \ei	
   \begin{python}
-    >>> " hello" + " world" # concatenacao
+    >>> "hello" + "world" # concatenacao
     'helloworld'
-    >>> s = ' hello'
-    >>> s[0] = ' j '
+    >>> s = 'hello'
+    >>> s[0] = 'j'
 
     Traceback (most recent call last):
     File " <stdin>" , line 1, in <module>
@@ -555,7 +555,7 @@
   \ei
   \begin{python}
     >>> text = 'o valor de pi eh = %f' % pi
-    >>> print text
+    >>> text
     >>> a = 10.2
     >>> i = 100
     >>> s = 'oi'
@@ -627,14 +627,14 @@
   \begin{python}
     # split()
     >>> s = 'monty python and the flying circus'
-    >>> print s.split()
+    >>> print(s.split()) 
     ['monty', 'python', 'and', 'the', 'flying', 'circus'] 
     # count()
-    >>> print s.count("th")
+    >>> print(s.count("th"))
     # join()
     >>> s = "em busca do calice sagrado"
     >>> s2 = s.split()
-    >>> print " /".join(s2)
+    >>> print("/".join(s2))
     em/busca/do/calice/sagrado		
   \end{python}
   \bi
@@ -671,13 +671,13 @@
   \ei
   \begin{python}
     >>> primos = (2,3,5,7)
-    >>> print primos[0], primos[-1]
+    >>> print(primos[0], primos[-1])
     2 7
     >>> t_vazia = ()
-    >>> print len(t_vazia)
+    >>> print(len(t_vazia)) 
     0
     >>> u_tupla = ('oi' ,)
-    >>> print len(u_tupla)
+    >>> print(len(u_tupla)) 
     1
   \end{python}	
   \bi
@@ -710,7 +710,7 @@
 
     # desempacotar tupla
     >>> x,y,z = t 
-    >>> print y
+    >>> print(y) 
     54321		
   \end{python}	
 \end{frame}
@@ -746,16 +746,16 @@
 \begin{frame}[fragile]
   \ft{Listas - Métodos }
   \begin{python}
-    >>> a = range(5)
-    >>> print a
+    >>> a = list(range(5))
+    >>> print(a)
     >>> a.append(5)
-    >>> print a
+    >>> print(a)
     >>> a.insert(0,42)
-    >>> print a
+    >>> print(a)
     >>> a.reverse()
-    >>> print a
+    >>> print(a)
     >>> a.sort()
-    >>> print a	
+    >>> print(a)	
   \end{python}	
   \bi
 \item Saída
@@ -809,14 +809,14 @@
     >>> original = [ 'H', 'He', 'Li' ]
     >>> temp = [ 'Be' ]
     >>> final = original + temp
-    >>> print final
+    >>> final
     [ 'H', 'He', 'Li', 'Be' ]	
   \end{python}
   \bi
 \item Slice
   \ei
   \begin{python}
-    >>> l = range(10)
+    >>> l = list(range(10))
     >>> l[2:6]
     [2, 3, 4, 5]	
   \end{python}	
@@ -831,13 +831,13 @@
   \ei
   \begin{python}
     >>> la = [['a', 'b'],[1,2],[3,4]]
-    >>> print la
+    >>> la
     [[ 'a', 'b'], [1, 2], [3, 4]]
-    >>> print la[0]
+    >>> la[0]
     [ 'a', 'b' ]
-    >>> print la[1]
+    >>> la[1]
     [1, 2]
-    >>> print la[2][1]
+    >>> la[2][1]
     4
   \end{python}
   \begin{figure}
@@ -887,19 +887,19 @@ range(...)
 Return a list containing an arithmetic progression of integers.
 range(i, j) returns [i, i+1, i+2, ..., j-1]; start (!) defaults to 0.
 When step is given, it specifies the increment (or decrement).
-For example, range(4) returns [0, 1, 2, 3]. The end point is omitted!
+For example, list(range(4)) returns [0, 1, 2, 3]. The end point is omitted!
 These are exactly the valid indices for a list of 4 elements.	
 \end{verbatim}
   \end{scriptsize}	
   \ei
   \begin{python}
-    >>> range(10)
+    >>> list(range(10))
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    >>> range(10,20)
+    >>> list(range(10,20))
     [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
-    >>> range(10,20,2)
+    >>> list(range(10,20,2))
     [10, 12, 14, 16, 18]
-    >>> range(20,10,-1)
+    >>> list(range(20,10,-1))
     [20, 19, 18, 17, 16, 15, 14, 13, 12, 11]		
   \end{python}	
 \end{frame}
@@ -958,20 +958,20 @@ if (num % 2 == 0) {
   \begin{python}
 if num % 2 == 0:
     par = par + 1
-    print 'Par'
+    print('Par')
 else:
     impar = impar + 1
-    print 'Impar'
+    print('Impar') 
   \end{python}
   \bi
 \item Erro de indentação
   \ei
   \begin{python}
 if x % 2 == 0:
-print 'par'
+print('par') 
 
 File " <stdin>", line 2
-print 'par'
+print('par') 
 IndentationError: expected an indented block
   \end{python}
 \end{frame}
@@ -1010,23 +1010,23 @@ else:
 \item Exemplos
   \ei	
   \begin{python}
->>> x = int( raw_input("Numero: "))
+>>> x = int( input("Numero: ") )
 >>> if x < 0:
-...     print 'Negativo'
+...     print('Negativo') 
 ... elif x == 0:
-...     print 'Zero'
+...     print('Zero') 
 ... else:
-...     print 'Positivo'
+...     print('Positivo') 
 
 >>> if ((x >= 0) and (x <= 100)):
-...     print "OK"
+...     print("OK")
 ... else:
-...     print "Fora do intervalo"
+...     print("Fora do intervalo")
 
 >>> if ((x<0) or (x>100)):
-...     print "Fora do intervalo"
+...     print("Fora do intervalo") 
 ... else:
-...     print "OK"		
+...     print("OK")		
   \end{python}		
 \end{frame}
 
@@ -1070,13 +1070,13 @@ m = (a > b) ? a : b;
   \begin{python}
 lst = [10,20,30, 'oi' , 'ciao' ]
 for item in lst:
-    print item
+    print(item)
 
 for letra in "python":
-    print letra
+    print(letra)
     
 for k in range(100):
-    print k		
+    print(k)		
   \end{python}
   \bi
 \item \pythoninline{while} sintaxe
@@ -1103,7 +1103,7 @@ while exp:
   \begin{python}
     >>> a = [ 'cat', 'spider', 'worm' ]
     >>> for x in a:
-    ...     print x, len(x)
+    ...     print(x, len(x))
     ...
     cat 3
     spider 6
@@ -1114,7 +1114,7 @@ while exp:
   \ei		
   \begin{python}
     >>> for i in range( len(a)):
-    ...     print i, a[i]
+    ...     print(i, a[i])
     ...
     0 cat
     1 spider
@@ -1133,13 +1133,13 @@ while exp:
   \begin{python}
     >>> nomes = [ 'Ana', 'Maria', 'Carla' ]
     >>> for par in enumerate(nomes):
-    ...     print par
+    ...     print(par)
     (0, 'Ana' )
     (1, 'Maria' )
     (2, 'Clara' )
 
     >>> for i,nome in enumerate(nomes):
-    ...     print i,nome
+    ...     print(i,nome)
     0 Ana
     1 Maria
     2 Clara
@@ -1159,7 +1159,7 @@ while exp:
     >>> nomes = [ 'C.Ronaldo' , 'G.Jesus', 'H.Kane' ]
     >>> gols = [4,0,6]
     >>> for n, g in zip(nomes,gols):
-    ...     print '%s fez %d gols' % (n,g)
+    ...     print('%s fez %d gols' % (n,g))
     ...
     C.Ronaldo fez 4 gols
     G.Jesus fez 0 gols
@@ -1180,15 +1180,15 @@ while exp:
   \ei
   \begin{python}
     >>> if n == 0:
-    ...     print 'Voce digitou zero.'
+    ...     print('Voce digitou zero.')
     ... elif n == 1:
-    ...     print 'Voce digitou um.'
+    ...     print('Voce digitou um.')
     ... elif n == 2:
-    ...     print 'Voce digitou dois.'
+    ...     print('Voce digitou dois.')
     ... elif n == 3:
-    ...     print 'Voce digitou tres.'
+    ...     print('Voce digitou tres.') 
     ... else:
-    ...     print 'Voce digitou qualquer coisa.'
+    ...     print('Voce digitou qualquer coisa.')
   \end{python}	
 \end{frame}
 
@@ -1237,7 +1237,7 @@ def nome1(arg1, arg2, argx=valor):
 ...     """ Imprime ate n. """
 ...     a, b = 0, 1
 ...     while a < n:
-...         print a,
+...         print(a,)
  ...         a, b = b, a+b
 
 >>> par(6) 
@@ -1266,13 +1266,13 @@ True
 ...     return x, x*num
 
 >>> a,b = mult(2)
->>> print a,b # 2 4
+>>> print(a,b)  # 2 4
 
 >>> a,b = mult(2, num=10)
->>> print a,b # 2 20
+>>> print(a,b)  # 2 20
 
 >>> a,b = mult(3, 5)
->>> print a,b # 3 15
+>>> print(a,b)  # 3 15
   \end{python}
 \end{frame}
 
@@ -1301,7 +1301,7 @@ def divide(a, b):
 >>> divide(10,2)
 (5, 0)
 >>> mq, mr = divide(10,3)
->>> print mq, mr
+>>> print(mq, mr)
 3 1
 >>> help(divide)
   \end{python}	
@@ -1327,14 +1327,14 @@ url_parse('http://www.facebook.com/fulano/photos')
   Exemplo:
   \ei
   \begin{center}
-    \begin{scriptsize}
+    \begin{normalsize}
     \begin{verbatim}
         l = [1,2,3,4]
         r = somaCumulativa(l)
         print(r)
         [1, 3, 6, 10]
 \end{verbatim}
-    \end{scriptsize}
+    \end{normalsize}
   \end{center}
 \end{frame}
 
@@ -1356,8 +1356,8 @@ def url_parse(url):
     """
     
 def main ():
-    urlteste = raw_input()
-    print url_parse(urlteste)
+    urlteste = input()
+    print(url_parse(urlteste))
     
 if __name__ == "__main__":
     main()
@@ -1426,22 +1426,22 @@ www.ufjf.br
 >>> d[ 'paulo' ] = 25
 >>> d[ 'jose' ] = 16
 >>> d[ 'alice' ] = 21
->>> print d
+>>> print(d) 
 {'paulo' : 25, 'jose' : 16, 'alice' : 21}
->>> print d[ 'alice' ]
+>>> print(d[ 'alice' ]) 
 21
 >>> d[ ' alice' ] = 'Paris'
->>> print d
+>>> print(d) 
 {'paulo' : 25, 'jose' : 16, 'alice' : 'Paris' }
 >>> ' jose' in d
 True
 >>> c = {'MG' : 25.0, 'SP' : 'rain' , 'RJ' : 40.0}
->>> print c[ 'JF' ] # KeyError
->>> if 'JF' in c: print c[ 'JF' ] # evita KeyError
->>> print c.get( 'ES' ) # retorna None
+>>> print(c[ 'JF' ]) # KeyError
+>>> if 'JF' in c: print(c[ 'JF' ])  # evita KeyError
+>>> print(c.get( 'ES' ))  # retorna None
 None
 >>> novo = dict(a=10, b=20, c=30)
->>> print novo
+>>> print(novo) 
 {'a' : 10, 'c' : 30, 'b' : 20}		
   \end{python}
 \end{frame}
@@ -1457,25 +1457,25 @@ None
   \begin{python}
 >>> d = dict(c=10, b=20, a=30)
 >>> for key in d:
-...     print key
+...     print(key)
 
->>> print d.keys()
+>>> print(d.keys())
 [ 'a', 'c' , 'b' ]
 
->>> print d.values()
+>>> print(d.values())
 [30, 10, 20]
 
 # loop sobre as chaves de forma ordenadas
 >>> for key in sorted(d.keys()):
-...     print key, d[key]
+...     print(key, d[key])
 
 # retorna uma lista onde cada elemento 
 # eh uma tupla (chave, valor)
->>> print d.items()
+>>> print(d.items())
 [( 'a', 10), ( 'c', 30), ( 'b', 20)]
 
 >>> for k,v in d.items(): 
-...     print k, '->', v		
+...     print(k, '->', v)		
   \end{python}	
 \end{frame}
 
@@ -1500,7 +1500,7 @@ None
   \ei
   \begin{python}
 >>> nova = [ x*x for x in lista ]
->>> print nova
+>>> print(nova)
 [4, 16, 36, 64]		
   \end{python}
 \end{frame}
@@ -1520,7 +1520,7 @@ None
 ...     if (x%2)==0:
 ...         nova.append( str(x))
 ...
->>> print nova
+>>> print(nova)
 [ '2', '6', '8', '10' ]
 >>>	
   \end{python}
@@ -1547,7 +1547,7 @@ None
   \begin{python}
 >>> txt = "There is someone in my head".split()
 >>> nova = [(p.upper(),p.lower(),len(p)) for p in txt]
->>> print nova
+>>> print(nova) 
 [( 'THERE', 'there' , 5),
 ( 'IS', 'is' , 2),
 ( 'SOMEONE', 'someone', 7),
@@ -1616,7 +1616,7 @@ class Ponto:
   \end{python}
   \begin{python}
 p = Ponto(3.0, 1.5)
-print p.getX(), p.getY()
+print(p.getX(), p.getY()) 
   \end{python}
 \end{frame}
 
@@ -1651,7 +1651,7 @@ class Ponto:
   \begin{python}
 p1 = Ponto(0,0); p2 = Ponto(1.0,1.0)
 p2.shift(1.0, 1.0)
-print "Distancia = ", p2.distancia(p1)    
+print("Distancia = ", p2.distancia(p1))     
   \end{python}
 \end{frame}
 
@@ -1751,11 +1751,11 @@ class Ponto:
   \end{python}
   \begin{python}
 >>> p = Ponto(2.0,2.0)
->>> print p.xcoord
+>>> print(p.xcoord) 
 2.0
 
 >>> p.xCoord = 'zebra'
->>> print p.xCoord
+>>> print(p.xCoord) 
 zebra        
   \end{python}
   \bi
@@ -1820,7 +1820,7 @@ class Ponto:
 >>> p2 = Ponto(0.0,0.0)
 >>> p2.shift(1.0,1.0)
 >>> if p1 == p2:
-...     print "Os pontos sao iguais."    
+...     print("Os pontos sao iguais.")     
   \end{python}
 \end{frame}
 
@@ -1861,7 +1861,7 @@ class Ponto:
   \item Vamos apresentar de forma prática alguns destes mecanismos:
     \bi
     \item Funções \pythoninline{lambda}
-    \item \pythoninline{map}, \pythoninline{filter} e \pythoninline{reduce}
+    \item \pythoninline{map} e \pythoninline{filter}
     \ei
   \item Existem muitos outros recursos de programação
     funcional como iterators e generators, que não
@@ -1883,7 +1883,7 @@ class Ponto:
   \ei 
   \begin{python}
 >>> def square(num): return num*num
->>> print map(square, range(5))
+>>> print list( map(square, range(5)) )
 [0, 1, 4, 9, 16]    
   \end{python}
   \bi
@@ -1891,11 +1891,11 @@ class Ponto:
   \ei
   \begin{python}
 >>> def sum(a,b): return a + b
->>> print range(5)
+>>> print(list(range(5))) 
 [0, 1, 2, 3, 4]
->>> print range(10,15)
+>>> print(list(range(10,15))) 
 [10, 11, 12, 13, 14]
->>> print map(sum, range(5), range(10,15))
+>>> print(list(map(sum, range(5), range(10,15)))) 
 [10, 12, 14, 16, 18]    
   \end{python}
 \end{frame}
@@ -1912,39 +1912,10 @@ class Ponto:
   \ei 
   \begin{python}
 >>> def is_even(num): return num % 2 == 0
->>> print filter(is_even, range(5))
+>>> print(list(filter(is_even, range(5)))) 
 [0, 2, 4]    
   \end{python}
 
-\end{frame}
-
-% ------------------------------------------------------------------------------
-
-\begin{frame}[fragile]
-  \ft{Programação Funcional}
-  \fs{reduce}
-  \bi
-  \item A função reduce começa com um valor inicial, e
-    reduz a sequência até um único valor aplicando a
-    função em cada um dos elementos da sequência
-    junto com o valor atual reduzido.
-  \item Calcular a soma dos quadrados dos números de 0 a
-    4 de uma lista
-  \ei
-  \begin{python}
->>> def soma(reduced,num): 
-...     return reduced + num*num
->>> print reduce(soma, range(5), 0)
-30    
-  \end{python}
-  \bi
-  \item Outro exemplo
-  \ei
-  \begin{python}
->>> a = list([10, 72, 40, 60])
->>> reduce(lambda r,x: x if(x>r) else r, a)   
-72
-  \end{python}
 \end{frame}
 
 % ------------------------------------------------------------------------------
@@ -1967,12 +1938,7 @@ for num in range(5):
     if num % 2 == 0:
         seq = seq + [num]
 print seq
-
-# reduce
-total = 0
-for num in range(5):
-    total = total + (num * num)
-print total    
+    
   \end{python}
 \end{frame}
 
@@ -1989,11 +1955,11 @@ print total
   \begin{python}
 >>> def f (x):
 ...     return x**2
->>> print f(8)
+>>> print(f(8)) 
 64
 
 >>> g = lambda x: x**2
->>> print g(8)    
+>>> print(g(8))     
 >>> 64
   \end{python}
   \bi
@@ -2016,41 +1982,21 @@ print total
 >>> f = make_incrementor(2)
 >>> g = make_incrementor(6)
 
->>> print f(42), g(42)
+>>> print(f(42), g(42)) 
 44 48    
   \end{python}
   \bi
-  \item O uso de funções lambda com map, filter e reduce
+  \item O uso de funções lambda com map e filter
     é muito prático
   \ei
   \begin{python}
->>> print map(lambda x: x**2, range(5))
+>>> print(list(map(lambda x: x**2, range(5)))) 
 [0, 1, 4, 9, 16]
 
->>> print filter(lambda x: x % 2 == 0, range(5))
+>>> print(list(filter(lambda x: x % 2 == 0, range(5))))  
 [0, 2, 4]
 
->>> print reduce(lambda r, n: r + n*n, range(5),0)    
-30
   \end{python}
-\end{frame}
-
-% ------------------------------------------------------------------------------
-
-\begin{frame}[fragile]
-  \ft{Programação Funcional}
-  \vspace{-0.35cm}
-  \bi
-  \item \textcolor{red}{Python 3}
-  \item Some well-known APIs no longer return lists:
-    \bi
-    \item map() and filter() return iterators. If you really need a list, a quick fix is e.g. list(map(...)), but a better fix is often to use a list comprehension (especially when the original code uses lambda), or rewriting the code so it doesn’t need a list at all. Particularly tricky is map() invoked for the side effects of the function; the correct transformation is to use a regular for loop (since creating a list would just be wasteful).
-    \ei
-    \item Builtins
-    \bi
-    \item Removed reduce(). Use functools.reduce() if you really need it; however, 99 percent of the time an explicit for loop is more readable.
-    \ei
-  \ei
 \end{frame}
 
 % ------------------------------------------------------------------------------
@@ -2139,21 +2085,19 @@ ofile.close()
 	\item Lendo de arquivos
 	\ei
 	\begin{python}
-infile = open("dados.txt", "r")	
-line = infile.readline()
-data_count = int(line)
-for i in range(data_count):
-    line = infile.readline()
-infile.close()
+with open("dados.txt") as infile:
+	read_data = infile.read()
+	print(read_data)
 	\end{python}
 	\bi
-	\item Podemos usar o metodo \pythoninline{rstrip()} para remover
-	espacos em branco à direita
-	\ei	
+	\item Conferindo se o arquivo esta aberto ou fechado
+	\ei
 	\begin{python}
-line = infile.readline()
-sline = line.rstrip()
-	\end{python}	
+if (infile.closed == True):
+	print("O arquivo esta fechado")
+else:
+	print("O arquivo esta aberto")
+	\end{python}
 \end{frame}
 
 % ------------------------------------------------------------------------------
@@ -2161,32 +2105,22 @@ sline = line.rstrip()
 \begin{frame}[fragile]
 	\ft{Arquivos}
 	\bi
-	\item Lendo de arquivos
+	\item Lendo um arquivo linha por linha:
 	\ei
 	\begin{python}
-infile = open("dados.txt", "r")	
-line = infile.readline()
-data_count = int(line)
-for i in range(data_count):
-    line = infile.readline()
-infile.close()
+with open("pontos.txt") as infile:
+	lines = infile.read().splitlines()
+	for i in range(len(lines)):
+		line = lines[i]
+		print(line)
 	\end{python}
 	\bi
-	\item Podemos usar o metodo \pythoninline{rstrip()} para remover
-	espacos em branco à direita
-	\ei	
-	\begin{python}
-		line = infile.readline()
-		sline = line.rstrip()
-	\end{python}
-	\bi
-	\item Ou podemos quebrar a linha em várias partes
+	\item Podemos quebrar a linha em várias partes
 	\ei
 	\begin{python}
-# linhas no formato: nome idade nota
-line = infile.readline()
+# linhas no formato: x y z
 temp = line.split()
-nome, idade, nota = temp[0], temp[1], temp[2]
+x, y, z = temp[0], temp[1], temp[2]
 	\end{python}	
 \end{frame}
 
@@ -2196,7 +2130,6 @@ nome, idade, nota = temp[0], temp[1], temp[2]
   \ft{\textbf{Hands on}}
   \bi
   \item[1.] Dada uma lista com palavras (strings), escreva um programa que crie uma lista de inteiros que corresponda ao tamanho das palavras. Escreva duas versões do programa: (i) usando um loop \pythoninline{for} e (ii) usando a função \pythoninline{map()}.
-  \item[2.] Escreva uma função \pythoninline{maior_palavra()} que recebe uma lista de palavras e retorna o comprimento da maior palavra da lista. Use apenas as funções \pythoninline{map, filter, reduce} e \pythoninline{lambda} para implementação.
   \ei 
 \end{frame}
 
@@ -2205,7 +2138,7 @@ nome, idade, nota = temp[0], temp[1], temp[2]
 \begin{frame}[fragile]
   \ft{\textbf{Hands on}}
   \bi
-  \item[3.] Vamos implementar uma função \pythoninline{le\_pontos()} que recebe a string
+  \item[2.] Vamos implementar uma função \pythoninline{le\_pontos()} que recebe a string
   com o nome de um arquivo texto, contendo as
   coordenadas de um conjunto de pontos 2D, lê o
   seu conteúdo e retorna uma listas com objetos
@@ -2220,7 +2153,7 @@ nome, idade, nota = temp[0], temp[1], temp[2]
 >>> arquivo = "pontos.txt"
 >>> pts = le_pontos(arquivo)
 >>> for pt in pts:
->   	print pt
+>   	print(pt) 
 (x1,y1) 
 (x2,y2)
 .
@@ -2415,20 +2348,20 @@ array([ 0. ,  0.2,  0.4,  0.6,  0.8])
 \begin{frame}[t,fragile]{Criando vetores NumPy}
 \begin{python}
 >>> a = np.linspace(0.0, 1.0, 6)
->>> print a
+>>> print(a) 
 [ 0.   0.2  0.4  0.6  0.8  1. ]
->>> print a.size, a.ndim, a.shape    
+>>> print(a.size, a.ndim, a.shape)     
 6 1 (6,)
 	
 >>> m = a.reshape(2,3)
->>> print m
+>>> print(m) 
 [[ 0.   0.2  0.4]
 [ 0.6  0.8  1. ]]
->>> print m.size, m.ndim, m.shape
+>>> print(m.size, m.ndim, m.shape) 
 6 2 (2, 3)
 	
 >>> Z = np.zeros((3,3))
->>> print Z
+>>> print(Z) 
 [[ 0.  0.  0.]
 [ 0.  0.  0.]
 [ 0.  0.  0.]]
@@ -2698,89 +2631,6 @@ for i in range(x.size):
 \end{frame}
 
 % ------------------------------------------------------------------------------
-\begin{frame}[t,fragile]{Vectorization}  
-	\vspace{-0.5cm}
-	\begin{columns}   
-		\column{.4\textwidth}
-		\begin{itemize}
-			\item Aplicar $f$ diretamente em todo o vetor
-			\item Muito mais eficiente
-			\item Mais compacto e fácil de ler
-			\item Nem todas funções \texttt{def func(x)} estão prontas
-			para serem usadas desta forma
-		\end{itemize}
-		\vspace{-0.5cm}
-		\begin{figure}
-			\centering
-			\includegraphics[scale=0.2]{img/hv.png}
-		\end{figure}
-		\column{.6\textwidth}
-		\begin{python}
-import numpy as np
-		
-def f(x):
-    return np.exp(np.sin(x))
-		
-x = np.linspace(0.0, 6.0, 1000)
-y = f(x)
-\end{python}
-		\pause
-		\begin{python}
-# funcao degrau 
-def H(x):
-    if (x<0):
-    	return 1
-    else:
-    	return 0
-		\end{python}
-	\end{columns}
-\end{frame}
-
-% ------------------------------------------------------------------------------
-\begin{frame}[t,fragile]{Vectorization}
-	
-	\begin{python}
-	>>> x = np.linspace(-1,1,5)
-	array([-1. , -0.5, 0. , 0.5, 1. ])
-	>>> x < 0
-	array([ True, True, False, False, False])
-	\end{python}
-	
-	\begin{itemize}
-		\item Como vetorizar funções assim?
-		\item Usar a função \pythoninline{where}
-		\item Uso: \pythoninline{where(condition, x1, x2)}
-		\item Retorna um array do mesmo tamanho de \pythoninline{condition}, onde o 
-		elemento \pythoninline{i} é igual a \pythoninline{x1[i]} se \pythoninline{condition[i]} é 
-		\pythoninline{True}, ou igual a \pythoninline{x2[i]} caso contrário (\pythoninline{False}).
-	\end{itemize}
-	
-\end{frame}
-
-% ------------------------------------------------------------------------------
-\begin{frame}[t,fragile]{Vectorization}
-	\begin{itemize}
-		\item Forma geral
-	\end{itemize}
-	\begin{python}
-def fun_vec(x):
-    cond = <exp_condicao>
-    x1 = <expressao1>
-    x2 = <expressao2>
-    return np.where(cond, x1, x2)
-	\end{python}
-	\begin{itemize}
-		\item Para o exemplo anterior temos
-	\end{itemize}
-	\begin{python}
-def Hv(x):
-    cond = x < 0
-    return np.where(cond, 0.0, 1.0)
-	\end{python}
-	
-\end{frame}
-
-% ------------------------------------------------------------------------------
 \begin{frame}[t,fragile]{Alguns métodos dos vetores}
 	\begin{scriptsize}
 		\begin{table}
@@ -3047,7 +2897,7 @@ array([ 0.08703704, -0.81349206,
 	>>> integrate.quad(fx2, 0.0, 4.0)
 	(21.333333333333332, 2.3684757858670003e-13)
 	
-	>> print 4.**3/3
+	>> print(4.**3/3) 
 	21.3333333333
 	\end{python}
 	\begin{itemize}
@@ -3352,133 +3202,6 @@ color='#2090AA')
 		\includegraphics[scale=0.3]{img/matplot3.png}
 	\end{figure}
 \end{frame}
-
-% ------------------------------------------------------------------------------
-\begin{frame}[t,fragile]{Exemplo Completo}
-	\begin{itemize}
-		\item Problema: Resolver uma Equação Diferencial Ordinária (EDO)
-		\item Encontrar $u(t)$ tal que
-		$$u'(t) = f( u(t), t)$$
-		\item dada a condição Inicial $$u(0) = u_0$$
-		\item Exemplo: Crescimento exponencial (população) $$u'(t) = a u$$
-		\item onde $a$ é uma constante dada que representa a taxa de crescimento de u.
-	\end{itemize}
-\end{frame}
-
-% ------------------------------------------------------------------------------
-\begin{frame}[t,fragile]{Exemplo Completo}
-	\begin{itemize}
-		\item Método de Euler Explícito
-		$$u_{k+1} = u_k + \Delta t \ f(u_k, t_k)$$
-		\item onde:
-		\begin{itemize}
-			\item $u_k$ é a aproximação numérica da solução exata $u(t)$ no tempo $t_k$
-			\item $\Delta t$ é o passo de tempo
-			\item $t_k = k \Delta t$, $k=0, \ldots, n$
-		\end{itemize}
-		\item Solução analítica para o exemplo $$u(t) = u_0 e^{a t}$$
-	\end{itemize}
-\end{frame}
-
-% ------------------------------------------------------------------------------
-\begin{frame}[t,fragile]{Exemplo Completo - Algoritmo}
-	\begin{itemize}
-		\item Dado: $u_0$, $a$, $T$, $\Delta t$
-		\item Calcular $n$ (número de passos de tempo)
-		\item Para k de 0 até n faça
-		\begin{itemize}
-			\item Calcular $u_{k+1}$ usando 
-			$$u_{k+1} = u_k + f(u_k, t_k) \Delta t$$
-		\end{itemize}
-		\item Exibir os resultados
-	\end{itemize}
-\end{frame}
-
-% ------------------------------------------------------------------------------
-\begin{frame}[t,fragile]{Exemplo Completo - Python}
-	\begin{itemize}
-		\item $u'(t) = u, \quad u_0 = 1, \quad T = 3$
-	\end{itemize}
-	\begin{columns}
-		\column{.4\textwidth}
-		\begin{python}[]
-import numpy as np
-from pylab import *
-
-u0 = 1
-T  = 3.0
-dt = 0.01
-n  = int(T/dt)
-
-# inicializa vetores
-u = np.zeros(n+1)
-v = np.zeros(n+1)
-t = np.zeros(n+1)
-
-# condicao inicial
-t[0] = 0.0
-u[0] = u0
-\end{python}
-\column{.6\textwidth}
-\begin{python}[]
-# loop no tempo
-for k in range(n):
-  u[k+1] = u[k] + dt * u[k]
-  t[k+1] = t[k] + dt
-
-# calcula solucao exata: 
-# u(t) = u0 exp(at)
-v = u0 * exp(t)
-
-print v
-print u
-
-# exibe grafico da solucao
-plot(t,v,color="r",
-label="Solucao exata")
-plot(t,u,
-linestyle="--",color="b",
-label="Solucao aproximada")
-legend(loc="best")
-show()    
-		\end{python}
-	\end{columns}
-\end{frame}
-
-% ------------------------------------------------------------------------------
-\begin{frame}[t,fragile]{Exemplo Completo}
-	\vspace{-0.5cm}
-	\begin{figure}
-		\centering
-		\includegraphics[scale=0.45]{img/euler.png}
-	\end{figure}
-\end{frame}
-
-% ------------------------------------------------------------------------------
-\begin{frame}[t,fragile]{Exemplo Completo com SciPy}
-	\begin{itemize}
-		\item scipy.integrate.odeint(func, y0, t)
-		\item Usa a biblioteca \textbf{odepack} escrita em FORTRAN.
-	\end{itemize}
-	\begin{python}[]
-from pylab import *
-from scipy.integrate import odeint
-
-def f(u,t):
-  return u
-
-T  = 3.0
-u0 = 1.0
-dt = 0.01
-n  = int(T/dt)
-
-t = np.linspace(0.0, T, n)
-u = odeint(f,u0,t)
-
-plot(t,u)
-	\end{python}
-\end{frame}
-
 % ------------------------------------------------------------------------------
 
 \begin{frame}
@@ -3732,35 +3455,6 @@ plot(t,u)
 \end{frame}
 
 % ------------------------------------------------------------------------------
-
-\begin{frame}
-	\frametitle{The zen of Python}
-	\begin{center}
-		\begin{scriptsize}
-			Beautiful is better than ugly.\\
-			Explicit is better than implicit.\\
-			Simple is better than complex.\\
-			Complex is better than complicated.\\
-			Flat is better than nested.\\
-			Sparse is better than dense.\\
-			Readability counts.\\
-			Special cases aren’t special enough to break the rules.\\
-			Although practicality beats purity.\\
-			Errors should never pass silently.\\
-			Unless explicitly silenced.\\
-			In the face of ambiguity, refuse the temptation to guess.\\
-			There should be one- and preferably only one -obvious way to do it.\\
-			Although that way may not be obvious at first unless you’re Dutch.\\
-			Now is better than never.\\
-			Although never is often better than *right* now.\\
-			If the implementation is hard to explain, it’s a bad idea.\\
-			If the implementation is easy to explain, it may be a good idea.\\
-			Namespaces are one honking great idea - let’s do more of those!\\
-		\end{scriptsize}
-	\end{center}
-\end{frame}
-
-% ------------------------------------------------------------------------------
 \begin{frame}[t]{Referências}
 	\vspace{-1cm}
 	\begin{columns}
@@ -3811,14 +3505,12 @@ plot(t,u)
 % ------------------------------------------------------------------------------
 \begin{frame}[t]{Agradecimentos}
 	\bi
-	\item Prof. Rafael Sachetto Oliveira
-	\item Prof. Bernardo Martins Rocha
-	\item Prof. Ruy Freitas Reis
-	\item Profa. Bárbara de Melo Quintela
-	\item Prof. Igor de Oliveira Knop
-	\item Equipe da Semana da Computação
+	\item Profa. Tatiane Ornelas Martins Alves
+	\item Prof. Rafael Sachetto Oliveira - UFSJ
+	\item Prof. Bernardo Martins Rocha - UFJF
 	\item Departamento de Ciência da Computação - UFSJ
 	\item Departamento de Ciência da Computação - UFJF
+	\item Departamento de Sistemas de Informação - Grambery
 	\ei
 \end{frame}
 

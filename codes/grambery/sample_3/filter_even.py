@@ -5,12 +5,12 @@ def is_even (num):
 # Funcao principal em Python
 def main ():
 	# Criando uma lista
-	lista1 = range(5)
-	print lista1
+	lista1 = list(range(5))
+	print(lista1) 
 
 	# Usando programacao funcional com 'filter'
-	lista1_even = filter(is_even,lista1)
-	print lista1_even	
+	lista1_even = list(filter(is_even,lista1))
+	print(lista1_even) 	
 
 if __name__ == "__main__":
 	main()	

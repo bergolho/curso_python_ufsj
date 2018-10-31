@@ -10,7 +10,7 @@ def main ():
 	# Definindo uma funcao que realiza o incremento de 6 
 	g = make_incrementer(6)
 
-	print f(42), g(42)
+	print(f(42), g(42)) 
 
 if __name__ == "__main__":
 	main()	

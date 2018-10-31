@@ -12,7 +12,7 @@ def main ():
 	
 	p2.shift(4.0,12.0)
 	d = p1.distancia(p2)
-	print "Distancia = ", d	
+	print("Distancia = ", d)	
 	
 if __name__ == "__main__":
 	main()	

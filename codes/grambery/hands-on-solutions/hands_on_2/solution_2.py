@@ -1,37 +1,37 @@
-# A funcao chamada pelo 'map' ira trabalhar em cada elemento do array
-def calcula_tamanho (s):
-	return len(s)
+from ponto import Ponto
 
-# Versao 1 da funcao maximum
-def maximum (reduced,num):
-	if (num > reduced):
-		return num
-	else:
-		return reduced
+def le_pontos (arquivo):
+	# Cria uma lista de Pontos vazio
+	pts = []
 
-# Versao 2 da funcao maximum
-def maximum2 (reduced,num):
-	return num if (num > reduced) else reduced
+	# Abre o arquivo de entrada
+	infile = open(arquivo,"r")
 
-# Solucao 1: usando reduce e map
-def solucao1 (lista):
-	return reduce(maximum, map(calcula_tamanho,lista), 0)
+	# Ler o numero de pontos e o converte para inteiro
+	line = infile.readline()
+	n = int(line)
 
-# Solucao 2: usando reduce, map e lambda
-def solucao2 (lista):
-	return reduce(lambda r , x : x if (x > r) else r , map(calcula_tamanho,lista))	
+	# Ler cada um dos pontos do arquivo
+	for i in range(n):
+		# Ler a linha
+		line = infile.readline()
+		# Quebrar em tokens usando o ' ' como marcador
+		tokens = line.split()
+		# Criar um objeto do tipo Ponto e adicionar na lista
+		pts.append( Ponto(float(tokens[0]),float(tokens[1])) )
+		
+	# Fecha o arquivo
+	infile.close()
+
+	# Retorna a lista
+	return pts
 
 # Funcao principal em Python
 def main ():
-	# Criando uma lista
-	lista = ["Lucas","Barbara","Thais","Bernardo","Ruy"]
-	print lista
-
-	result1 = solucao1(lista)
-	print result1
-
-	result2 = solucao2(lista)
-	print result2
+	arquivo = "pontos.txt"
+	pts = le_pontos(arquivo)
+	for pt in pts:
+		print(pt) 
 	
 if __name__ == "__main__":
 	main()	

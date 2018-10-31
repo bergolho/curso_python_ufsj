@@ -8,13 +8,13 @@ def fx2 (x):
 # Integra usando Quadratura de Gauss
 def continous_integration (a,b):
 	I = integrate.quad(fx2,a,b)
-	print I
+	print(I) 
 	return I
 
 # Integra usando regra do Trapezio
 def discrete_integration (x,y):
 	I = integrate.trapz(y,dx=x[1]-x[0])
-	print I
+	print(I) 
 	return I	
 
 # Integrando um intervalor continuo

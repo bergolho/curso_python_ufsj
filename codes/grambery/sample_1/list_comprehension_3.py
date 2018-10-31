@@ -20,7 +20,7 @@ def main ():
 	# Segundo elemento sera todo escrito em lowercase	
 	# Terceiro elemento e o numero de caracteres do token	
 	nova = [(p.upper(),p.lower(),len(p)) for p in txt]
-	print nova	
+	print(nova)	
 	
 if __name__ == "__main__":
 	main()	
